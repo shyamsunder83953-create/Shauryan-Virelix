@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shauryan Virelix</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial;
+  background:#0b1c2c;
+  color:white;
+}
+
+/* Header */
+header {
+  text-align:center;
+  padding:20px;
+  background:#06121d;
+}
+
+header img {
+  width:100px;
+}
+
+h1 { color: gold; }
+
+/* Buttons */
+.btn {
+  padding:10px 20px;
+  background:gold;
+  color:black;
+  border:none;
+  cursor:pointer;
+  margin:10px;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+.btn:hover { background:orange; }
+
+/* Hero */
+.hero {
+  text-align:center;
+  padding:40px;
+  animation:fade 2s;
+}
+
+/* Medicines */
+.medicines {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  padding:20px;
+}
+
+.card {
+  background:#122b45;
+  width:230px;
+  padding:15px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card:hover { transform:scale(1.05); }
+
+.card img {
+  width:100%;
+  border-radius:10px;
+}
+
+/* Profile */
+.profile {
+  text-align:center;
+  padding:30px;
+}
+
+.profile img {
+  width:120px;
+  border-radius:50%;
+}
+
+/* Footer */
+footer {
+  text-align:center;
+  padding:20px;
+  background:#06121d;
+}
+
+/* Animation */
+@keyframes fade {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <img src="logo.png">
+  <h1>Shauryan Virelix</h1>
+  <p>Trusted Medicine Company</p>
+</header>
+
+<section class="hero">
+  <h2>Quality Medicines for Better Life 💊</h2>
+  
+  <button class="btn" onclick="orderNow()">Order Now</button>
+  <button class="btn" onclick="contactUs()">Contact</button>
+</section>
+
+<!-- PROFILE -->
+<section class="profile">
+  <h2>Owner</h2>
+  <img src="myphoto.jpg">
+  <p>Founder of Shauryan Virelix</p>
+</section>
+
+<!-- MEDICINES -->
+<section class="medicines">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1580281657527-47a1b0e9d36d">
+<h3>Paracetamol</h3>
+<p>Fever & pain relief medicine</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1588776814546-ec7b0c2b87c0">
+<h3>Vitamin C</h3>
+<p>Boosts immunity</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
+<h3>Antibiotic</h3>
+<p>Fights infections</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1584362917165-526a968579e8">
+<h3>Insulin</h3>
+<p>Used for diabetes control</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1579154204601-01588f351e67">
+<h3>Cough Syrup</h3>
+<p>Relief from cold & cough</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1597764690523-15bea4c581c9">
+<h3>Calcium</h3>
+<p>Strong bones support</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2">
+<h3>Antacid</h3>
+<p>Relieves acidity</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+<h3>Painkiller</h3>
+<p>Reduces body pain</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585435557343-3b092031a831">
+<h3>Multivitamin</h3>
+<p>Daily health supplement</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1612277795421-9bc7706a4a34">
+<h3>ORS</h3>
+<p>Hydration support</p>
+</div>
+
+</section>
+
+<!-- SOCIAL -->
+<section style="text-align:center;">
+<h2>Follow Us</h2>
+
+<button class="btn" onclick="openInsta()">Instagram</button>
+<button class="btn" onclick="openWhatsApp()">WhatsApp</button>
+
+</section>
+
+<footer>
+<p>© 2026 Shauryan Virelix</p>
+</footer>
+
+<script>
+function orderNow(){
+  alert("Order system coming soon!");
+}
+
+function contactUs(){
+  alert("Contact: 1800200200");
+}
+
+function openInsta(){
+  window.open("https://instagram.com/");
+}
+
+function openWhatsApp(){
+  window.open("https://wa.me/917654610634");
+}
+</script>
+
+</body>
+</html>
